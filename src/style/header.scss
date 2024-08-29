@@ -1,0 +1,28 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .links{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        a{
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 20px;
+            border-radius: 48px;
+            border: 1px solid white;
+            color: white;
+            background-color: rgba(0, 0, 0, 32%);
+            backdrop-filter: blur(17.2px);
+        }
+
+        a:hover{
+            backdrop-filter: blur(60px);
+        }
+    }
+}

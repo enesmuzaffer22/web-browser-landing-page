@@ -1,0 +1,177 @@
+.search-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 48px;
+    justify-content: center;
+
+    .edit-menu-popup {
+        width: 720px;
+        height: auto;
+        max-height: 900px;
+        position: absolute;
+
+        .edit-menu {
+            width: 720px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 48px;
+            padding: 16px;
+            background-color: rgba(0, 0, 0, 32%);
+            backdrop-filter: blur(17.2px);
+            border-radius: 16px;
+            border: 1px solid white;
+            height: 100%;
+            max-height: 900px;
+            overflow-y: auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+
+            td,
+            th {
+                border: solid 1px white;
+                padding: 8px;
+            }
+
+            thead tr th {
+                text-align: left;
+            }
+        }
+
+        button {
+            padding: 12px 16px;
+            background-color: transparent;
+            border: solid 1px white;
+            color: white;
+            border-radius: 8px;
+            transition: 0.1s ease-in-out;
+            margin-right: 8px;
+        }
+
+        button:hover {
+            background-color: white;
+            color: black;
+        }
+
+        h3,
+        th,
+        i,
+        td,
+        label {
+            color: white;
+        }
+
+        .edit-link {
+            margin-bottom: 48px;
+
+            input {
+                padding: 8px;
+                width: 100%;
+            }
+
+            #label-link {
+                margin-right: 8px;
+            }
+        }
+
+        .icon-selection {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 16px;
+            margin-bottom: 16px;
+
+            i {
+                font-size: 24px;
+                margin-left: 4px;
+            }
+        }
+    }
+
+    .search-input {
+        padding: 16px 24px;
+        background-color: rgba(0, 0, 0, 32%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 48px;
+        border: solid 1px white;
+        width: 720px;
+        backdrop-filter: blur(17.2px);
+        gap: 16px;
+
+        form {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            gap: 16px;
+
+            input[type=text] {
+                background-color: transparent;
+                border: none;
+                font-size: 16px;
+                padding: 0;
+                color: white;
+                width: 100%;
+            }
+
+            input[type=text]:focus {
+                outline: none;
+            }
+
+            button {
+                background: transparent;
+                border: none !important;
+                outline: none !important;
+                cursor: pointer;
+
+                i {
+                    color: white;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
+    .quick-access-buttons {
+        width: 504px;
+        height: auto;
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        justify-content: center;
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, 32%);
+            backdrop-filter: blur(17.2px);
+            padding: 15px;
+            border: solid 1px white;
+            border-radius: 100%;
+
+            i {
+                color: white;
+                font-size: 32px;
+                width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: transparent;
+            }
+        }
+
+        a:hover {
+            backdrop-filter: blur(60px);
+        }
+    }
+}

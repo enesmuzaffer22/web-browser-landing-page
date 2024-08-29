@@ -1,0 +1,64 @@
+.customize-popup {
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 32%);
+    backdrop-filter: blur(17.2px);
+    border-radius: 16px;
+    border: 1px solid white;
+    position: absolute;
+
+    h2 {
+        color: white;
+        margin-bottom: 48px;
+    }
+
+    .input-container {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        .button-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            button {
+                padding: 12px 16px;
+                background-color: transparent;
+                border: solid 1px white;
+                color: white;
+                border-radius: 8px;
+                transition: 0.1s ease-in-out;
+            }
+
+            button:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+
+        input::file-selector-button {
+            padding: 12px 16px;
+            background-color: transparent;
+            border: solid 1px white;
+            color: white;
+            border-radius: 8px;
+            transition: 0.1s ease-in-out;
+        }
+
+        input::file-selector-button:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .upload-file:valid, .upload-file:invalid{
+            color: white;
+        }
+
+        label {
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+    }
+}
